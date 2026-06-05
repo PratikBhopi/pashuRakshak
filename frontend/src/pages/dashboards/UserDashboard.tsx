@@ -5,8 +5,6 @@ import {
   Clock,
   ArrowRight,
   CheckCircle2,
-  AlertCircle,
-  Activity,
   FileText,
   Plus,
   Heart,

@@ -4,7 +4,7 @@ import { reportsAPI } from '../../utils/api';
 import type { AnimalReport } from '../../types';
 import DashboardLayout from '../../components/layout/DashboardLayout';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
-import { MapPin, Clock, AlertTriangle, Navigation, Locate, CheckCircle2, Circle, ArrowRight, Calendar } from 'lucide-react';
+import { MapPin, Clock, AlertTriangle, Navigation, Locate, CheckCircle2, ArrowRight, Calendar } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';

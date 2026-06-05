@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
-import { Search, Filter, MapPin, Calendar, FileText, Building2, ChevronDown, ChevronRight, Clock, User, CheckCircle2 } from 'lucide-react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Search, Filter, MapPin, FileText, Building2, ChevronDown, ChevronRight, User, CheckCircle2 } from 'lucide-react';
 import DashboardLayout from '../components/layout/DashboardLayout';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import { reportsAPI, ngoAPI, adminAPI } from '../utils/api';
@@ -24,7 +24,7 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-import { socketService } from '../utils/socket';
+
 
 // Status color mapping
 const getStatusDotColor = (status: string): string => {
@@ -75,7 +75,7 @@ const TrackReport: React.FC = () => {
   const [selectedWorkerId, setSelectedWorkerId] = useState<number | null>(null);
   const [isAssignModalOpen, setIsAssignModalOpen] = useState(false);
   const [isAssigning, setIsAssigning] = useState(false);
-  const [workerLocations] = useState<Record<string, { lat: number; lng: number }>>({});
+
 
   // Check user role
   const isNGO = user?.roles?.includes('NGO');
